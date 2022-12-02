@@ -1,0 +1,8 @@
+# result symlinks
+result*
+
+# emacs autosave files
+\#*
+
+# emacs backup files
+*~
