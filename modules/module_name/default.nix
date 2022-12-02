@@ -13,7 +13,7 @@ in
     enable = mkEnableOption ''
       Service Name
     '';
-    example_option = mkOption { default = "Pls visit the-xpert.me" type = types.str; };
+    example_option = mkOption { default = "Pls visit the-xpert.me"; type = types.str; };
   };
 
   config = lib.mkIf cfg.enable {
