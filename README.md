@@ -1,0 +1,1 @@
+# nix-pkg-module-boilerplate
