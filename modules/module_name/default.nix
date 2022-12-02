@@ -9,11 +9,12 @@ let
 in
 {
   options.services.pkg_name = {
-      enable = mkEnableOption ''
-        Service Name
-      '';
-      example_option = mkOption { type = types.str; };
- };
+    # Configure options available to the module.
+    enable = mkEnableOption ''
+      Service Name
+    '';
+    example_option = mkOption { default = "Pls visit the-xpert.me" type = types.str; };
+  };
 
   config = lib.mkIf cfg.enable {
     systemd.services.pkg_name = {
