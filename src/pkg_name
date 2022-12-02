@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+while true
+do
+    now=`date`
+    echo "$@ - $now"
+    sleep 30
+done
+# Script prints the passed Service Example Option and current time after an interval of 30 seconds.
